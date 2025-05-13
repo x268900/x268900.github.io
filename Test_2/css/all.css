@@ -1,0 +1,301 @@
+
+.wrap{
+    max-width: 1920px;
+    margin: 0 auto; 
+    background-color: #FBFBFB;
+}
+nav{
+    width: 100%; 
+    justify-content: center;
+    font-weight: bold;
+    
+}
+nav a{
+ padding: 30px;
+ margin: 5px;
+ color: #000;
+}
+nav a:hover{
+    color: #2bbd7e;
+    border-bottom: 2px solid #185e4a;
+}
+
+.container{
+    margin: 0 auto;
+
+
+}
+.card{
+    width: 40%;
+    margin-left: 55%;
+    margin-top: -3%;
+}
+.zoom_1{
+    display: none;
+}
+
+.hrader p{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    border: 1px solid #000;
+    position: absolute;
+    top: 750px;
+    left: 1100px;
+    padding: 1%;
+    background-color: white;
+    
+}
+.card-txt{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 3%;
+   font-size: 18px;
+   line-height: 1.5;
+}
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+.item .pic{
+    width: 55%;
+}
+.item .pic img{
+    width: 100%;
+    vertical-align: middle;
+}
+.item-txt{
+    width: 30%;
+    background-color: #FFFFFF;
+    flex-shrink: 0;
+    padding: 100px 30px;
+    position: relative;
+    z-index: 1;
+}
+.item-txt h2{
+  font-weight: bold;
+  font-size: 28px;
+}
+.item-txt p{
+    margin-top: 20px;
+  line-height: 1.5;
+  font-size: 16px;
+}
+.item > :first-child{
+    margin-right: -10%;
+}
+.item-footer{
+    font-size: 36px;
+    text-align: end;
+    margin-right: 10%;
+}
+
+.wire{
+    width: 40px;
+    border-bottom:2px solid blue;
+    margin-bottom: 30px;
+}
+
+@media(max-width:996px){
+
+    /* .zoom_1{
+        display: block;
+        width: 100%;
+        border: 1px solid #000;
+        background-color: white;
+        padding: 2%;
+    } */
+}
+/* .container{
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: #faf7f7;
+}
+.course{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.course-items{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    
+    margin-bottom: 24px;
+}
+
+.course-items-p{
+    display: flex;
+}
+
+.blue{
+    color: blue;
+}
+.course-items .btn-hot{
+    line-height: 1.2em;
+    border: 1px solid #681b1b;
+    align-self: flex-start;
+    padding: 0 1.5em;
+    border-radius: 200px;
+    margin-top: auto;
+    white-space:nowrap;
+}
+ 
+.btn{
+    line-height: 1.2em;
+    border: 1px solid #ccc;
+    align-self: flex-start;
+    padding: 0 1.5em;
+    border-radius: 200px;
+    margin-top: auto;
+    white-space:nowrap; 
+} 
+
+.btn a{
+
+    color: #ccc;
+} 
+.btn a:hover{
+    color: #2a2929;
+} 
+
+.ft-1{
+    font-size: 1.5rem;
+}
+.blue{
+    color: blue;
+}
+
+.btn-hot{
+    background-color: blue;
+    border-style:none !important;
+    padding:  3px !important;  
+    position: absolute;
+    font-size: 14px;
+    left: 250px;
+} */
+
+/* .fsafasf p{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    border: 1px solid #000;
+    position: absolute;
+    top: 750px;
+    left: 1100px;
+    padding: 2%;
+    background-color: white;
+} */
+/*************************************************/
+.fs-1{
+    font-size: 12px;
+}
+.fs-2{
+    font-size: 24px;
+}
+.fs-3{
+    font-size: 36px;
+}
+.d-block{
+    display: block;
+}
+.d-flex{
+    display: flex;
+}
+
+.mt-1{
+    margin-top: 10px;
+}
+.mt-2{
+    margin-top: 20px;
+}
+.mt-100{
+    margin-top: 100px;
+}
+.mb-1{
+    margin-bottom: 10px;
+}
+.mb-2{
+    margin-bottom: 20px;
+}
+.pos-r{
+    position: relative;
+}
+.pos-a{
+    position: absolute;
+}
+.bg-white{
+    background-color:#fff
+}
+.bg-blue{
+    background-color: blue;
+}
+.w-100{
+    width: 100%;
+}
+.w-75{
+    width: 75%;
+}
+.w-50{
+    width: 50%;
+}
+.w-30{
+    width: 30%;
+}
+.w-25{
+    width: 25%;
+}
+.my-1{
+    margin-left: 100px;
+}
+.tx-center{
+    text-align: center;
+}
+
+
+/************************************************/
+@media(max-width:1550px){
+    .card{
+    width: 100%;
+    margin-left: 0%;
+    margin-top: -3%;
+}
+   .hrader{
+    flex-direction: column;
+   }
+   .hrader img{
+    width: 100%;
+   }
+   .hrader p{
+    display: none;
+   }
+   .item{
+    flex-direction: column;
+   }
+   .item .pic{
+    width: 100%;
+}
+    .item-txt{
+        width: 100%;
+    }
+    .item > :first-child{
+    margin-right: 0;
+}
+}
+/* @media (max-width:992px){
+    .course-items{
+        width: 50%;
+    }
+}
+
+@media(max-width:776px){
+    .course-items{
+        width: 100%;
+    }
+    .course-items .btn{
+        margin-top: 20px;
+    }
+} */
