@@ -1,9 +1,8 @@
-body{
-  line-height: 1.5;
-}
+
 .wrap{
     max-width: 1920px;
     margin: 0 auto;
+    line-height: 1.5;
 }
 .wrap-test{
   display: flex;
@@ -26,7 +25,7 @@ body{
   flex-direction: column;
   align-items: center;
   color:#1f9b80cc;
-  margin-top: -17%;
+  margin-top: -15%;
 }
 .header-txt h1{
   font-size: 48px;
@@ -127,7 +126,7 @@ nav .navbar-course{
   right: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .menuBtn{
   display: block;
   top:-40px;
