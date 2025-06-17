@@ -1,0 +1,67 @@
+*{
+	scroll-behavior: smooth;
+}
+
+/* 40px */
+.scrollBtn {
+	width: 2.5rem;
+	height: 2.5rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.scrollBtn::before, .scrollBtn::after {
+	width: 18px;
+	height: 5px;
+	border-radius: 3px;
+	background: #f90;
+	position: absolute;
+	content: "";
+	margin-top: 5px;
+}
+.scrollBtn::before {
+	transform: rotate(-45deg) translate(0, -50%);
+
+	left: 0.5rem;
+}
+.scrollBtn::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.5rem;
+}
+.scrollBtn:focus {outline: none;}
+
+
+
+
+/* *{
+	scroll-behavior: smooth;
+}
+
+.scrollBtn{
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	border: none;
+	background-color: rgb(0, 255, 98);
+	outline: none;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 10px;
+	font-size: 10px;
+	font-family: "Poppins";
+}
+.scrollBtn:hover{
+	background-color: rgb(19, 17, 17);
+	color: rgb(0, 255, 98);
+	font-size: 15px;
+} */
