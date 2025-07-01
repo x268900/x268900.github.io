@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="css/Restest.css">
+        <link rel="stylesheet" href="css/foodpanda.css">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/Gotop.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrap">
+        <div class="wrap-test">
+        <div class="logo">
+            <img src="https://www.showba.com.tw/templates/default/images/logo_showba.png" alt="">
+        </div>
+        <nav class="navbar">
+            <input type="checkbox" id="menu_control">
+            <label for="menu_control" class="menuBtn"></label>
+             <ul class="navbar-course">
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="H">五金問題<span><i class="bi bi-arrow-down-short"></i></span></a>
+                    <ul>
+                        <li><a href="Hardware.html">五金問題</a></li>
+                        <li><a href="Electrical.html">電器問題</a></li>
+                        <li><a href="#">水電問題</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">發票問題</a></li>
+                <li><a href="#">帳務問題<i class="bi bi-arrow-down-short"></i></a>
+                    <ul>
+                        <li><a href="Hardware.html">Uber問題</a></li>
+                        <li><a href="Electrical.html">Foodpanda問題</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">公賣局問題</a></li>
+            </ul>
+        </nav>
+</div>
+
+        <header>
+        <div class="header-bg">
+                    <div class="foodpanda-txt-1">
+                        <h1>Foodpanda問題解說!</h1>
+                        <p>在這邊你可以找到你所遇到的問題<br>
+                        不過還是要注意，有些狀況可能跟實際當下狀況不同喔!</p>
+                    </div>
+        </header>
+
+        <article class="article-header">
+            <div class="article-header-txt">
+                    <h2>foodpanda注意事項解說!</h2>
+            </div>
+        </article>
+        <article class="article-things">
+            <div>
+            <h2>一、注意商品條碼</h2>
+            <div class="article-things-bg">
+                <p>在為客人挑選購物的商品時請注意條碼與客人所選的商品條碼是否一樣!!</p>
+            </div>
+            <h2>二、注意商品是一組還是單罐的!</h2>
+            <div>
+                <p>在為客人挑選購物的商品時請注意條碼與客人所選的商品條碼是否一樣!!</p>
+            </div>
+            </div>
+        </article>
+<!--------------------------------------------------------------------------------------------------------->
+        <section>
+        <div class="calculator">
+            <h2>Foodpanda計算機</h2>
+
+                <div class="input-group ">
+                    <label for="value1">電腦金額:(收銀機金額)</label>
+                    <input type="number" id="value1" placeholder="輸入數值">
+                </div>
+        <div class="input-group">
+            <label for="value2">費用：(熊貓PDA裡面所顯示費用框金額)</label>
+            <input type="number" id="value2" placeholder="輸入數值">
+        </div>
+
+        <div class="input-group">
+            <label>是否有折扣：</label>
+            <div class="discount-toggle">
+                <div class="toggle-option" data-discount="yes">
+                    <span>✅</span>
+                    <div>有折扣</div>
+                </div>
+                <div class="toggle-option" data-discount="no">
+                    <span>❌</span>
+                    <div>無折扣</div>
+                </div>
+            </div>
+        </div>
+            <div id="discountSection" class="discount-section">
+                <div class="input-group">
+                    <label for="discountValue">折扣值：(熊貓PDA的折扣)</label>
+                    <input type="number" id="discountValue" placeholder="輸入折扣值">
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="discountType">折扣類型：</label>
+                <select id="discountType">
+                    <option value="fixed">固定金額：</option>
+                </select>
+            </div>
+
+        <div class="input-group">
+            <label for="operation">計算操作：</label>
+            <select id="operation">
+                <option value="subtract">沒有折扣的計算</option>
+                <option value="addsum">有折扣的計算</option>
+            </select>
+        </div>
+        
+        <button id="calculateBtn" class="btn btn-calculate">計算結果</button>
+        
+        <div id="result" class="result">
+            <h3>計算結果</h3>
+            <div id="calculationSteps"></div>
+        </div>
+    </div>
+  <!-- <div class="calculator">
+        <h1>折扣条件计算器</h1>
+        
+        <div class="input-group">
+            <label for="value1">電腦金額：</label>
+            <input type="number" id="value1"  placeholder="輸入數值">
+        </div>
+        
+        <div class="input-group">
+            <label for="value2">費用：</label>
+            <input type="number" id="value2"placeholder="輸入數值">
+        </div>
+        
+        <div class="input-group">
+            <label>是否有折扣？</label>
+            <div class="discount-toggle">
+                <div class="toggle-option" data-discount="yes">
+                    <span>✅</span>
+                    <div>有折扣</div>
+                </div>
+                <div class="toggle-option" data-discount="no">
+                    <span>❌</span>
+                    <div>沒有折扣</div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="discountSection" class="discount-section">
+            <div class="input-group">
+                <label for="discountValue">折扣值：</label>
+                <input type="number" id="discountValue"  placeholder="输入折扣值">
+            </div>
+            
+            <div class="input-group">
+                <label for="discountType">折扣类型：</label>
+                <select id="discountType">
+                    <option value="fixed">固定金额</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="input-group">
+            <label for="operation">计算操作：</label>
+            <select id="operation">
+                <option value="subtract">减 (-)</option>
+            </select>
+        </div>
+        
+        <button id="calculateBtn" class="btn btn-calculate">计算结果</button>
+        
+        <div id="result" class="result">
+            <h3>计算结果</h3>
+            <div id="calculationSteps"></div>
+        </div>
+    </div> -->
+        </section>  
+    </div>
+    <script src="js/foodpanda.js"></script>
+</body>
+</html>
