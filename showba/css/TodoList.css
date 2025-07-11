@@ -1,0 +1,277 @@
+body{
+    background: #3c87ff;
+    overflow: hidden;
+}
+.wrap{
+    max-width: 768px;
+    background: #fff;
+    margin: 135px auto;
+    border-radius: 7px;
+    padding: 28px 0;
+}
+.task-input{
+    height: 52px;
+    padding: 0 25px;
+    position: relative;
+}
+.task-input i{
+    position: absolute;
+    top: 50%;
+    transform: translate(17px,-50%);
+}
+.task-input input{
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    padding:  0 20px 0 53px;
+    outline: none;
+}
+.task-input input::placeholder{
+    color: #bfbfbf;
+}
+.controls,li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.controls{
+    padding: 18px 25px;
+    border-bottom: 1px solid #ccc;
+}
+.filters span{
+    cursor: pointer;
+    margin: 0 8px;
+    font-size: 17px;
+}
+.filters span:first-child{
+    margin-left: 0;
+}
+.filters span.active{
+    color: #3c87ff;
+}
+.controls .clear-btn{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #fff;
+    padding: 7px 13px;
+    background: #3c87ff;
+}
+
+.task-box{
+    overflow: auto !important;
+    margin: 20px 25px;
+    overflow-y: auto; /* 确保需要时显示滚动条 */
+    max-height: 100vh; /* 限制高度触发滚动 */
+    /* 滚动条间距效果 */
+    padding-right: 8px; /* 右侧留出间距 */
+    scrollbar-gutter: stable both-edges; /* 预留滚动条空间 */
+}
+.task-box .task{
+    font-size: 17px;
+    margin-bottom: 18px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ccc;
+}
+.task-box .task:last-child{
+    margin-bottom: 0;
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+.task label{
+    display: flex;
+}
+.task label p.checked{
+    text-decoration: line-through;
+}
+.task label input{
+    margin-right: 12px;
+}
+.task .settings{
+    cursor: pointer;
+    position: relative;
+}
+
+
+.settings .task-menu{
+    position: absolute;
+    background: #fff;
+    border-radius: 5px;
+    padding: 5px 0;
+    right: -5px;
+    bottom: -65px;
+    transform: scale(0);
+    box-shadow:  0 0 6px rgba(0,0,0,0.15);
+    z-index: 2;
+    transform-origin: top right;
+    transition: transform 0.2s ease;
+}
+.settings:hover .task-menu.show{
+    transform: scale(1);    
+}
+.task-menu li{
+    height: 25px;
+    font-size: 16px;
+    padding: 17px 15px;
+    margin-bottom: 2px;
+    justify-content: flex-start;
+}
+.task-menu li:last-child{
+    margin-bottom: 0;
+}
+.task-menu li:hover{
+    background: #f5f5f5;
+}
+.task-menu li i{
+    padding-right: 8px;
+}
+
+.task-input {
+    display: flex;
+    gap: 10px;  /* 控制元素間距 */
+    align-items: center;
+}
+/***********************************/
+.new-btn {
+    /* 基礎樣式 */
+    background: linear-gradient(135deg, #4a90e2 0%, #2d6cdb 100%);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    
+    /* 圖示對齊 */
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+     white-space: nowrap;
+    /* 文字方向設定 */
+    writing-mode: horizontal-tb;
+    text-orientation: mixed;
+    /* 彈性容器對齊 */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    /* 修正中文排版 */
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+
+
+/* 懸浮效果 */
+.new-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #2d6cdb 0%, #4a90e2 100%);
+}
+
+/* 點擊動畫 */
+.new-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 光暈效果 */
+.new-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, 
+              rgba(255,255,255,0.3) 0%, 
+              rgba(255,255,255,0) 80%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.new-btn:hover::after {
+    opacity: 1;
+}
+
+/* 禁用狀態 */
+.new-btn:disabled {
+    background: #e0e0e0;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+
+.task-time {
+    font-size: 0.8em;
+    color: #666;
+    display: block;  /* 換行顯示 */
+    margin-top: 4px;
+}
+
+
+.task-time {
+    display: block;
+    font-size: 12px;
+    color: #888;
+    margin-top: 4px;
+}
+
+
+/* 滚动条轨道 */
+.task-box::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 4px;
+}
+
+/* 滚动条滑块 */
+.task-box::-webkit-scrollbar-thumb {
+    background: #3c87ff;
+    border-radius: 4px;
+}
+
+/* 滚动条尺寸 */
+.task-box::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+
+.task-box::-webkit-scrollbar {
+    width: 10px; /* 滚动条宽度 */
+    background-color: transparent; /* 透明背景 */
+}
+
+.task-box::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 5px;
+    margin: 15px 0; /* 上下间距 */
+}
+
+.task-box::-webkit-scrollbar-thumb {
+    background: #3c87ff;
+    border-radius: 5px;
+    border: 2px solid #f0f0f0; /* 边框作为间距 */
+}
+
+.task-box::-webkit-scrollbar-thumb:hover {
+    background: #2a6bc9;
+}
+
+/* 智能显示逻辑 - 仅当内容超过容器高度时显示滚动条 */
+.task-box {
+    overflow-y: hidden; /* 默认隐藏 */
+    transition: overflow-y 0.3s ease;
+}
+
+.task-box.scroll-active {
+    overflow-y: auto; /* 激活时显示 */
+}
