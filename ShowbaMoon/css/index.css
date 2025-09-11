@@ -1,0 +1,87 @@
+/*方案一：CSS漸變月色背景 + 動態浮雲 -*/
+/*body {
+       background: linear-gradient(160deg, 
+        #0a1a3a 20%, 
+        #2a2352 40%, 
+        #4a2b6a 60%, 
+        #6a3382 80%
+      );
+
+    }*/
+    
+    /* 月亮效果 */
+    /* body::before {
+      content: '';
+      position: absolute;
+      top: 20%;
+      right: 15%;
+      width: 150px;
+      height: 150px;
+      background: radial-gradient(circle at 30% 30%, 
+        #fff3e0 10%, 
+        #ffe0b2 30%, 
+        #ffcc80 50%
+      );
+      border-radius: 50%;
+      box-shadow: 0 0 50px rgba(255,235,179,0.5);
+    } */
+
+    /* 浮雲動畫 */
+    /* .cloud {
+      position: absolute;
+      background: rgba(255,255,255,0.1);
+      border-radius: 20px;
+      animation: float 20s infinite linear;
+    }
+    @keyframes float {
+      from { transform: translateX(-100%); }
+      to { transform: translateX(100vw); }
+    }
+
+ */
+
+
+    /* 改整個導覽列背景 */
+.navbar {
+  background-color: #004466 !important; /* 深藍色 */
+}
+
+/* 改導覽列裡面文字顏色 */
+.navbar .nav-link {
+  color: #ffffff !important; /* 白色字 */
+}
+
+/* 滑鼠移到選單時的顏色 */
+.navbar .nav-link:hover {
+  color: #ffcc00 !important; /* 黃色 */
+}
+
+/* 品牌 Logo 旁邊的文字（如果有文字） */
+.navbar-brand {
+  color: #ffffff !important;
+}
+
+/* Font Awesome 圖示顏色 */
+.navbar i {
+  color: #ffcc00 !important; /* 黃色圖示 */
+}
+
+/* 避免輪播撐出水平捲軸 */
+.carousel {
+  overflow: hidden;
+}
+
+/* 圖片保持比例縮放，符合容器 */
+.carousel-img {
+  object-fit: cover;   /* 保持裁切效果，不會變形 */
+  max-height: 70vh;    /* 你原本的高度限制 */
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  display: block;
+}
