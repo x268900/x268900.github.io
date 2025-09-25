@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小北建工 慶中秋!!</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/index.css">
+    <style>
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+    }
+
+    @media (min-width: 768px) {
+      .custom-hover:hover {
+        background-color: var(--bs-warning-bg-subtle);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      }
+    }
+
+    /* 🔑 防止出現水平捲動條 */
+    /* html, body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    canvas {
+      display: block;
+      max-width: 100%;
+    } */
+
+
+    </style>
+</head>
+<body>
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container flex-column">
+<div class="text-center my-3">
+  <a class="navbar-brand fw-bold fs-4 text-dark" href="#">
+    小北百貨建工店 <span class="text-danger">(中秋方案!)</span>
+  </a>
+</div>
+  
+
+<!-------------------導覽列------------------------------->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item px-3">
+              <a class="nav-link active" aria-current="page" href="index.html">首頁</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="Catalog.html">最新消息</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="Barbecue_supplies.html">每月DM</a>
+            </li>
+            <!-- <li class="nav-item px-3">
+              <a class="nav-link" href="index.html">最新消息</a>
+            </li> -->
+            <li class="nav-item px-3">
+              <a class="nav-link" href="hero.html">聯絡我們</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!-------------------導覽列------------------------------->
+
+
+
+<!---------------------輪播---------------------------------->
+    <div class="container mt-5 ">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./image/1-1.jpg" class="d-block w-100" alt="活動圖片1"  style="max-height: 70vh;">
+    </div>
+    <div class="carousel-item">
+      <img src="./image/1-2.jpg" class="d-block w-100" alt="活動圖片2" style="max-height: 70vh;">
+    </div>
+    <div class="carousel-item">
+      <img src="./image/1-3.jpg" class="d-block w-100" alt="活動圖片3" style="max-height: 70vh;">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    </div>
+    
+<!---------------------輪播(結束)---------------------------------->
+
+
+<div class="container">
+<div class="row">
+  <div class="col">
+    <div class="text-center my-5">
+      <div class="card bg-dark text-light shadow-lg rounded-4 mx-auto" style="max-width: 700px;">
+        <div class="card-body p-4 p-md-5">
+          <h3 class="card-title fw-bold text-warning mb-3">歡迎來到小北百貨建工店！</h3>
+          <p class="card-text fs-5 mb-4">
+            有任何問題想詢問嗎？下方 QR CODE 連結到我們的社群網站，  
+            專人隨時為你提供服務。
+          </p>
+          <a href="https://line.me/ti/g2/2QXI6ugDdDqMK0p1rp0qyUi30vncCsGPXY_KmQ?utm_source=invitation&utm_medium=QR_code&utm_campaign=default" 
+             target="_blank" 
+             class="btn btn-warning btn-lg fw-bold text-dark">
+            加入我們的LINE群組
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<section class="my-5">
+  <div class="container">
+    <!-- 專區標題 -->
+    <h2 class="fw-bold mb-4 text-center text-light">最新活動 / 消息公告</h2>
+
+    <!-- 卡片區 -->
+<div class="row g-4">
+  <!-- 卡片1 -->
+  <div class="col-12 col-sm-6 col-lg-4">
+    <div class="card h-100 border-0 shadow-sm custom-hover">
+      <div class="card-body">
+        <div class="text-muted small mb-2">
+          <span class="badge bg-primary">2025/09/16</span>
+        </div>
+        <img src="./image/showba_Moon16.jpg" class="img-fluid rounded mb-3" alt="活動1"
+        style="cursor:pointer"
+         data-bs-toggle="modal"
+           data-bs-target="#imageModal"
+           data-bs-image="./image/showba_Moon16.jpg">
+        <h5 class="card-title fw-bold">中秋有情天 伊甸攜愛 助公益</h5>
+        <p class="card-text text-muted">購買檸檬愛玉酵 50元 小北再捐5元</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 卡片2 -->
+  <div class="col-12 col-sm-6 col-lg-4">
+    <div class="card h-100 border-0 shadow-sm custom-hover">
+      <div class="card-body">
+        <div class="text-muted small mb-2">
+          <span class="badge bg-primary">2025/09/01</span>
+        </div>
+        <img src="./image/showba_Moon2.jpg" class="img-fluid rounded mb-3" alt="活動2"
+        style="cursor:pointer"
+         data-bs-toggle="modal"
+           data-bs-target="#imageModal"
+           data-bs-image="./image/showba_Moon2.jpg">
+        <h5 class="card-title fw-bold">中秋月餅禮盒</h5>
+        <p class="card-text text-muted">多款禮盒 熱銷中</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 卡片3 -->
+  <div class="col-12 col-sm-6 col-lg-4">
+    <div class="card h-100 border-0 shadow-sm custom-hover">
+      <div class="card-body">
+        <div class="text-muted small mb-2">
+          <span class="badge bg-primary">2025/09/01</span>
+        </div>
+        <img src="./image/showba_Moon3.jpg" class="img-fluid rounded mb-3" alt="活動3"
+        style="cursor:pointer"
+         data-bs-toggle="modal"
+           data-bs-target="#imageModal"
+           data-bs-image="./image/showba_Moon3.jpg">
+        <h5 class="card-title fw-bold">豪神嗨酒祭</h5>
+        <p class="card-text text-muted">9/1~9/30 消費滿額抽豪禮</p>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</section>
+
+
+
+
+<!----------------------烤肉用品專區(開始)------------------------------------------>
+<article class="my-5">
+  <div class="container">
+    <!-- 專區標題 -->
+    <div class="row justify-content-center mb-4">
+      <div class="col-12 col-md-10">
+        <div class="card bg-dark text-light shadow-lg border-0 rounded-3">
+          <div class="card-body d-flex align-items-center justify-content-center">
+            <!-- 左邊 icon + 標題 -->
+            <div class="d-flex align-items-center">
+              <i class="bi bi-fire fs-2 text-warning me-3"></i>
+              <p class="fs-3 fw-bold mb-0">
+                特價商品專區 <span class="text-warning">! (烤肉用品)</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 商品展示區 -->
+<div class="row g-4 mt-5">
+  <!-- 商品 1 -->
+  <div class="col-12 col-sm-6 col-lg-3">
+    <div class="card h-100 border-0 shadow-sm d-flex flex-column" style="cursor:pointer">
+      <img src="image/small/smallMoon_1.jpg" class="card-img-top" alt="烤肉爐">
+      <div class="card-body d-flex flex-column justify-content-end text-center">
+        <h5 class="card-title">烤肉醬</h5>
+        <p class="text-muted">讓肉更加有風味~~</p>
+        <p class="fw-bold text-danger fs-3">$36</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 商品 2 -->
+  <div class="col-12 col-sm-6 col-lg-3">
+    <div class="card h-100 border-0 shadow-sm d-flex flex-column" style="cursor:pointer">
+      <img src="image/small/smallMoon_2.jpg" class="card-img-top" alt="烤肉夾">
+      <div class="card-body d-flex flex-column justify-content-end text-center">
+        <h5 class="card-title">不鏽鋼烤肉夾</h5>
+        <p class="text-muted">耐熱好用</p>
+        <p class="fw-bold text-danger fs-3">$39</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 商品 3 -->
+  <div class="col-12 col-sm-6 col-lg-3">
+    <div class="card h-100 border-0 shadow-sm d-flex flex-column" style="cursor:pointer">
+      <img src="image/small/smallMoon_3.jpg" class="card-img-top" alt="加厚烤網">
+      <div class="card-body d-flex flex-column justify-content-end text-center">
+        <h5 class="card-title">不鏽鋼菱形烤網</h5>
+        <p class="text-muted">數量有限 要買要快~~!</p>
+        <p class="fw-bold text-danger fs-3">$59</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 商品 4 -->
+  <div class="col-12 col-sm-6 col-lg-3">
+    <div class="card h-100 border-0 shadow-sm d-flex flex-column" style="cursor:pointer">
+      <img src="image/small/smallMoon_4.jpg" class="card-img-top" alt="木炭">
+      <div class="card-body d-flex flex-column justify-content-end text-center">
+        <h5 class="card-title">嚴選炭精</h5>
+        <p class="text-muted">火力持久 數量有限~要買要快!</p>
+        <p class="fw-bold text-danger fs-3">$199</p>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</article>
+<!----------------------烤肉用品專區(結束)------------------------------------------>
+
+
+
+<div class="container">
+<div class="row g-4 align-items-center">
+  <!-- 左邊圖片 -->
+  <div class="col-12 col-md-4">
+    <div class="bg-white p-3 rounded-4 shadow-sm text-center">
+      <img src="image/showba_Moon23.jpg" class="img-fluid rounded" alt="商品展示">
+    </div>
+  </div>
+
+  <!-- 右邊文字 -->
+  <div class="col-12 col-md-8">
+    <div class="bg-white p-4 rounded-4 shadow-sm h-100 d-flex flex-column justify-content-center">
+      <h2 class="fw-bold text-dark mb-3">中秋烤肉必備好物</h2>
+      <p class="text-muted mb-3 fs-5">
+        這款烤肉用品精選自人氣熱銷商品，包含烤肉爐、加厚烤網、木炭與不鏽鋼烤夾。
+        高品質材質，耐用又安全，讓你與家人朋友在中秋佳節盡情享受烤肉樂趣。
+      </p>
+      <p class="text-muted mb-4 fs-6">
+        小北百貨建工店提供多種烤肉用品組合與特價優惠，方便你一次購足所需，
+        還能享受中秋專屬折扣，節省更多預算。
+      </p>
+      <a href="Barbecue_supplies.html" class="btn btn-warning btn-lg fw-bold text-dark w-50 align-self-start">
+        查看完整商品 <i class="bi bi-arrow-right-circle ms-2"></i>
+      </a>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+
+
+<!---------------footer-------------------------->
+
+  <footer class="py-5 bg-dark text-light mt-5">
+      <div class="container border-bottom">
+        <div class="row  gy-4 ">
+          <div class="col-lg-4 col-md-4 col-12 mb-4">
+            <h4 class="text-info h5 border-start border-3 border-info ps-2 mb-3">QUICK LINKS</h4>
+            <ul class="list-unstyled ps-2">
+              <li class="pb-3">
+                <a href="#" class="link-secondary">首頁</a>
+              </li>
+              <li class="pb-3">
+                <a href="#" class="link-secondary">最新消息</a>
+              </li>
+              <li class="pb-3">
+                <a href="hero.html" class="link-secondary">門市資訊</a>
+              </li>
+              <li class="pb-3">
+                <a href="#" class="link-secondary">每月DM</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12 mb-4">
+            <h4 class="text-info h5 border-start border-3 border-info ps-2 mb-3 pe-lg-4">INFORMATION</h4>
+            <ul class="list-unstyled ps-2">
+              <li class="pb-3">
+                <p href="#" class="link-secondary border-2 border-end pe-3 d-inline-block">小北總部</p><br>
+                <a href="#" class="text-info">台南市安南區科技公園大道15號</a>
+              </li>
+              <li class="pb-3">
+                <p href="#" class="link-secondary border-2 border-end pe-3 d-inline-block">客服專線</p><br>
+               <a href="" class="text-info">0800-002-198</a>
+              </li>
+              <li class="pb-3">
+                <p href="#" class="link-secondary border-2 border-end pe-3 d-inline-block">服務時間</p><br>
+               <p class="text-info">週一至週五｜08:00-12:00；13:00-17:00(不含國定假日、補班日)</p>
+              </li>
+              <li class="pb-3">
+                <p href="#" class="link-secondary border-2 border-end pe-3 d-inline-block">客服信箱</p><br>
+               <a href="" class="text-info">service@showba.tw</a>
+              </li>
+            </ul>
+          </div>
+
+          
+          <div class="col-lg-4 col-md-4 col-12 ps-lg-5 mt-md-4 mt-3">
+            <h4 class="text-info h5 border-start border-3 border-info ps-2 mb-3">建工店小北百貨群組</h4>
+           <a href="https://line.me/ti/g2/2QXI6ugDdDqMK0p1rp0qyUi30vncCsGPXY_KmQ?utm_source=invitation&utm_medium=QR_code&utm_campaign=default">
+  <img src="./image/建工.jpg" 
+       alt="LINE群組QR碼"
+       class="img-fluid w-50 mb-5">
+</a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <p class=" text-light small m-0">copyright © 2025 小北百貨建工店, 版權所有。本網站僅用於網頁製作練習，無任何商業行為。</p>
+      </div>
+    </footer>
+
+
+
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0 shadow-none">
+      <img id="modalImage" src="" class="img-fluid rounded" alt="展示圖片">
+    </div>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
