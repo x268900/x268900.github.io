@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>最新消息</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/index.css">
+
+  <style>
+    a{
+      text-decoration: none;
+    }
+/* 卡片整體懸停效果 */
+.hover-effect {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.hover-effect:hover {
+  background: #337ab7;  /* 背景色變化 */
+  transform: translateY(-5px);  /* 上浮效果 */
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1) !important;
+}
+
+/* 文字顏色變化 */
+.hover-effect:hover .card-text {
+  color: #fff !important;  /* 文字變紅色 */
+}
+
+/* 日期標籤連動效果 */
+.hover-effect:hover .date-badge {
+  background-color: #337ab7 !important;
+  color: white !important;
+  transform: translate(-10%, -10%) scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .hover-effect:hover {
+    background: initial !important;
+    transform: none !important;
+    box-shadow: none !important;
+  }
+  
+  .hover-effect:hover .card-text {
+    color: inherit !important;
+  }
+  
+  .hover-effect:hover .date-badge {
+    background-color: white !important;
+    color: #0d6efd !important;
+    transform: none !important;
+  }
+}
+
+  <style>
+    .hover-float {
+      transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      will-change: transform;
+    }
+    .hover-float:hover {
+      transform: translateY(-8px) scale(1.02);
+      filter: drop-shadow(0 10px 8px rgba(0,0,0,0.08));
+    }
+  </style>
+</head>
+<body>
+
+           <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container flex-column">
+<div class="text-center my-3">
+  <a class="navbar-brand fw-bold fs-4 text-dark" href="#">
+    小北百貨建工店 <span class="text-danger">(中秋方案!)</span>
+  </a>
+</div>
+  
+
+<!-------------------導覽列------------------------------->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item px-3">
+              <a class="nav-link active" aria-current="page" href="index.html">首頁</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="Catalog.html">最新消息</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="Barbecue_supplies.html">每月DM</a>
+            </li>
+            <!-- <li class="nav-item px-3">
+              <a class="nav-link" href="index.html">最新消息</a>
+            </li> -->
+            <li class="nav-item px-3">
+              <a class="nav-link" href="hero.html">聯絡我們</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!-------------------導覽列------------------------------->
+
+<section class="bg-warning w-100 mt-5 p-5 text-center" style="background-color: rgba(255, 193, 7, 0.75)  !important"> <!-- 唯一修改處 -->
+  <p class="text-primary fs-1 fst-italic">NEWS!!<span class="text-dark">最新消息</span></p>
+
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <!-- 卡片 1 -->
+     <div class="col-12 col-md-4 mb-3 d-flex justify-content-center">
+        <div class="card position-relative hover-effect">
+          <div class="date-badge position-absolute top-0 start-0 bg-white text-primary fw-bold p-2 mx-2 
+                      d-flex align-items-center justify-content-center 
+                      transition-all">
+            <div class="text-center">
+              <div class="fs-5 fw-bold">2025</div>
+              <div class="fs-6">08/21</div>
+            </div>
+          </div>
+          <img src="image/showba_MoonSmall_1.jpg" class="card-img-top">
+          <div class="card-body ">
+            <p class="card-text fw-bold text-start">中元誠心拜 普渡小北BUY</p>
+            <p class="card-text mt-1 text-dark text-truncate text-start">三款中元組合包 普渡拜拜 飲食補給 最佳首選!<br>消費滿額再享[免費送貨到府]+[百桌服務]</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 卡片 2 (重複結構保持原樣) -->
+      <div class="col-12 col-md-4 mb-3 d-flex justify-content-center">
+        <div class="card position-relative hover-effect">
+          <div class="date-badge position-absolute top-0 start-0 bg-white text-primary fw-bold p-2 mx-2 
+                      d-flex align-items-center justify-content-center 
+                      transition-all">
+            <div class="text-center">
+              <div class="fs-5 fw-bold">2025</div>
+              <div class="fs-6">08/21</div>
+            </div>
+          </div>
+          <img src="image/showba_MoonSmall_2.jpg" class="card-img-top">
+          <div class="card-body ">
+            <p class="card-text fw-bold text-start">小北會員超星級 會員福利大升級</p>
+            <p class="card-text mt-1 text-dark text-truncate text-start">全新三大會員福利同步登場 ! [分級制度]、<br>[生日禮]、[會員日]正式啟動，回饋升級~~</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 卡片 3 (重複結構保持原樣) -->
+     <div class="col-12 col-md-4 mb-3 d-flex justify-content-center">
+        <div class="card position-relative hover-effect">
+          <div class="date-badge position-absolute top-0 start-0 bg-white text-primary fw-bold p-2 mx-2 
+                      d-flex align-items-center justify-content-center 
+                      transition-all">
+            <div class="text-center">
+              <div class="fs-5 fw-bold">2025</div>
+              <div class="fs-6">08/21</div>
+            </div>
+          </div>
+          <img src="image/showba_MoonSmall_3.jpg" class="card-img-top">
+          <div class="card-body ">
+            <p class="card-text fw-bold text-start">小北防災包</p>
+            <p class="card-text mt-1 text-dark text-truncate text-start">台日防災專家X跨國指導設計 全台首家自有品<br>牌災胞通路業者 榮獲台灣防災商品認證!!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="w-100 mt-5 p-5 text-center" style="background-color: rgba(248, 250, 246, 0.884)">
+  <p class="text-primary fs-1 fst-italic">EVENTS! <span class="text-dark">好康情報</span></p>
+
+  <div class="container mt-5">
+    <div class="row justify-content-center"> <!-- 新增行居中 -->
+      <div class="col-12 col-md-6 mb-5 mb-5 hover-float"> <!-- 三階段響應式控制 -->
+        <img src="image/1-1.jpg" 
+             class="img-fluid rounded" 
+             alt="活動圖片"
+             style="max-width: 90%; height: auto; margin: 0 auto"> <!-- 行內樣式控制 -->
+      </div>
+
+            <div class="col-12 col-md-6 mb-5 hover-float"> <!-- 三階段響應式控制 -->
+        <img src="image/1-2.jpg" 
+             class="img-fluid rounded" 
+             alt="活動圖片"
+             style="max-width: 90%; height: auto; margin: 0 auto"> <!-- 行內樣式控制 -->
+      </div>
+
+            <div class="col-12 col-md-6 mb-5 hover-float"> <!-- 三階段響應式控制 -->
+        <img src="image/1-3.jpg" 
+             class="img-fluid rounded" 
+             alt="活動圖片"
+             style="max-width: 90%; height: auto; margin: 0 auto"> <!-- 行內樣式控制 -->
+      </div>
+
+            <div class="col-12 col-md-6 mb-5 hover-float"> <!-- 三階段響應式控制 -->
+        <img src="image/1-4.jpg" 
+             class="img-fluid rounded" 
+             alt="活動圖片"
+             style="max-width: 90%; height: auto; margin: 0 auto"> <!-- 行內樣式控制 -->
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!---------------footer-------------------------->
+
+  <footer class="py-5 bg-dark text-light mt-5 ">
+      <div class="container border-bottom">
+        <div class="row  gy-4 ">
+          <div class="col-lg-4 col-md-4 col-12 mb-4">
+            <h4 class="text-info h5 border-start border-3 border-info ps-2 mb-3">QUICK LINKS</h4>
+            <ul class="list-unstyled ps-2">
+              <li class="pb-3">
+                <a href="index.html" class="link-secondary">首頁</a>
+              </li>
+              <li class="pb-3">
+                <a href="#" class="link-secondary">最新消息</a>
+              </li>
+              <li class="pb-3">
+                <a href="hero.html" class="link-secondary">門市資訊</a>
+              </li>
+              <li class="pb-3">
+                <a href="#" class="link-secondary">每月DM</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12 mb-4">
+            <h4 class="text-info h5 border-start border-3 border-info ps-2 mb-3 pe-lg-4">INFORMATION</h4>
+            <ul class="list-unstyled ps-2">
+              <li class="pb-3">
+                <p href="#" class="link-secondary border-2 border-end pe-3 d-inline-block">小北總部</p><br>
+                <a href="#" class="text-info">台南市安南區科技公園大道15號</a>
+              </li>
+              <li class="pb-3">
+                <p href="#" class="link-secondary border-2 border-end pe-3 d-inline-block">客服專線</p><br>
+               <a href="" class="text-info">0800-002-198</a>
+              </li>
+              <li class="pb-3">
+                <p href="#" class="link-secondary border-2 border-end pe-3 d-inline-block">服務時間</p><br>
+               <p class="text-info">週一至週五｜08:00-12:00；13:00-17:00(不含國定假日、補班日)</p>
+              </li>
+              <li class="pb-3">
+                <p href="#" class="link-secondary border-2 border-end pe-3 d-inline-block">客服信箱</p><br>
+               <a href="" class="text-info">service@showba.tw</a>
+              </li>
+            </ul>
+          </div>
+
+          
+          <div class="col-lg-4 col-md-4 col-12 ps-lg-5 mt-md-4 mt-3">
+            <h4 class="text-info h5 border-start border-3 border-info ps-2 mb-3">建工店小北百貨群組</h4>
+           <a href="https://line.me/ti/g2/2QXI6ugDdDqMK0p1rp0qyUi30vncCsGPXY_KmQ?utm_source=invitation&utm_medium=QR_code&utm_campaign=default">
+  <img src="./image/建工.jpg" 
+       alt="LINE群組QR碼"
+       class="img-fluid w-50 mb-5">
+</a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <p class=" text-light small m-0">copyright © 2025 小北百貨建工店, 版權所有。本網站僅用於網頁製作練習，無任何商業行為。</p>
+      </div>
+    </footer>
+
+<script src="js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
